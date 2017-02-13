@@ -3,10 +3,10 @@
 <%@include file="global.jsp"%>
 	<div class="header">
 		<div class="container">
-			<a class="logo"  href="../index.jsp">胶囊日记</a>
+			<a class="logo"  href="${pageContext.request.contextPath}/index.jsp">胶囊日记</a>
 			<ul class="nav nav-user">
-				<li><a href="jsp/login.jsp">登录</a></li>
-				<li><a href="/register">注册</a></li>
+				<li><a href="${pageContext.request.contextPath}/jsp/login.jsp">登录</a></li>
+				<li><a href="${pageContext.request.contextPath}/jsp/register.jsp">注册</a></li>
 			</ul>
 		</div>
 	</div>

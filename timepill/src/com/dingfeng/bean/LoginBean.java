@@ -1,10 +1,11 @@
 package com.dingfeng.bean;
 
+import java.sql.Timestamp;
 import java.util.Date;
 
 public class LoginBean {
 	private int ID;
-	private Date createDate;
+	private Timestamp createDate;
 	private String accountName;
 	private String passWord;
 	private String imageView;
@@ -26,9 +27,6 @@ public class LoginBean {
 	public Date getCreateDate() {
 		return createDate;
 	}
-	public void setCreateDate(Date createDate) {
-		this.createDate = createDate;
-	}
 	public String getAccountName() {
 		return accountName;
 	}
@@ -37,6 +35,9 @@ public class LoginBean {
 	}
 	public String getPassWord() {
 		return passWord;
+	}
+	public void setCreateDate(Timestamp createDate) {
+		this.createDate = createDate;
 	}
 	public void setPassWord(String passWord) {
 		this.passWord = passWord;
